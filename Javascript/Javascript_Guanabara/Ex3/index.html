@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR>
+<head>
+<meta charset=" UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Analisa Números JS</title>
+</head>
+
+<body>
+    <header>
+        <h1>Analisa Números</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>
+                <label for="inum">Número (0 a 100): </label>
+                <input type="number" name="num" id="inum">
+                <input type="button" value="Adicionar" onclick="adiciona()">
+            </p>
+            <p>
+                <select name="lista" id="ilista" size="5"></select>
+            </p>
+            <p>
+                <input type="button" value="Finalizar" onclick="finaliza()">
+            </p>
+        </div>
+        <div id="ires">
+            Resultado...
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; EXERCÍCIO JS</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

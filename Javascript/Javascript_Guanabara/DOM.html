@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: rgb(73, 224, 73);
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        div#DOM {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20pt;
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>TESTE DOM</h1>
+    <p>resultado...</p>
+    <p>teste lvl 0 de <strong>DOM</strong> em JS.</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        var corpo = window.document.body //armazenando todo o conteudo do body na variavel corpo.
+        var p1 = window.document.getElementsByTagName('p')[0] // pega o elemento pelo nome da tag, foi usado a tag 'p', como tem duas, '0' representa o primeiro. E armazena na variavel p1.
+        var d = window.document.getElementById('msg')
+        window.document.write('conteudo do paragrafo 1: ' + p1.innerText) //p1.innerText mostra o conteudo contido na variavevl p1.
+        p1.style.color = 'red' //alterand o atributo de css daquele paragrafo.
+        corpo.style.background = 'black'//alterando o estilo do body.
+        d.style.background = 'blue'
+        d.innerText = 'texto modificado via DOM'
+
+        function clicar() {
+            var area = window.document.getElementById('DOM')
+            area.innerText = 'CLICOU!'
+        }
+        function entrar() {
+            var area = window.document.getElementById('DOM')
+            area.innerText = 'ENTROU!'
+        }
+        function sair() {
+            var area = window.document.getElementById('DOM')
+            area.innerText = 'SAIU!'
+        }
+        function somar() {
+            var num1 = window.document.getElementById('inum1')
+            var num2 = window.document.getElementById('inum2')
+            var n1 = Number(num1.value) //preciso do valor em numero, ja que o documento recebe o valor digitado em string.
+            var n2 = Number(num2.value)
+            var resultado = window.document.getElementById('soma')
+            var soma = n1 + n2
+            resultado.innerText = `A soma entre ${n1} e ${n2} é igual a: ${soma}`
+        }
+    </script>
+    <div id="DOM" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">interaja aqui.</div>
+
+    <h2>SOMANDO VALORES</h2>
+    <input type="number" name="num1" id="inum1"> +
+    <input type="number" name="num2" id="inum2"> =
+    <input type="button" value="SOMAR" onclick="somar()">
+    <div id="soma">RESULTADO</div>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR>
+<head>
+<meta charset=" UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>ex1-JS</title>
+</head>
+
+<body>
+    <header>
+        <h1>Verifica idade</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Ano de Nascimento:
+                <input type="number" name="ano" id="iano" min="0">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="sexo" id="M" checked>
+                <label for="M">Masculino</label>
+                <input type="radio" name="sexo" id="F">
+                <label for="F">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados para ver o resultado. <br>
+            <img src="" alt="imagem de uma pessoa" id="foto">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; EXERCÍCIO JS</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

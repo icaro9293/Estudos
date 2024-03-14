@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+* {
+    border: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: blue;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+section#box1 {
+    align-items: center;
+    background-color: white;
+    width: 30%;
+    border-radius: 15px;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 5px 5px 5px black;
+    text-align: center;
+}
+
+section#box2 {
+    /* display: flex; */
+    align-items: center;
+    background-color: white;
+    width: 30%;
+    border-radius: 15px;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.normal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7px;
+    background-color: grey;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    /* cursor: pointer; */
+}
+
+.btn_excluir {
+    width: 20px;
+    cursor: pointer;
+}
+
+.selecionado {
+    padding: 7px;
+    background-color: red;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    height: 35px;
+}

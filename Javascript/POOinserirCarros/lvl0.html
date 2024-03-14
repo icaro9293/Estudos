@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section id="box1" class="box">
+            <div>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome">
+            </div>
+            <div>
+                <label for="iportas">Portas: </label>
+                <input type="number" name="portas" id="iportas" value="0">
+            </div>
+            <div>
+                <label for="iblindagem">Blindagem: </label>
+                <input type="number" name="blindagem" id="iblindagem" value="0" disabled>
+            </div>
+            <div>
+                <label for="imunição">Munição: </label>
+                <input type="number" name="munição" id="imunição" value="0" disabled>
+            </div>
+            <div>
+                <input type="radio" id="inormal" name="tipo" checked value="normal">
+                <label for="inormal">Normal</label>
+                <input type="radio" id="imilitar" name="tipo" value="militar">
+                <label for="imilitar">Militar</label>
+            </div>
+            <div>
+                <input type="button" value="ADICIONAR" id="ibotao">
+
+            </div>
+            <br>
+            <div id="iresultado">
+                <p>Resultado</p>
+            </div>
+        </section>
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
