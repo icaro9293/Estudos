@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*parametro para que seja contado como width, o tamanho da caixa, mais atributos como padding e margin*/
+}
+
+:root {
+  --border: 1px solid #ffffff1a;
+}
+
+body,
+table,
+input,
+button {
+  font: 300 16px/140% 'Roboto', sans-serif;
+  /*1)quão bold é a fonte. 2)tamanho da fonte 3)tamanho da linha*/
+}
+
+body {
+  background-color: #121214;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 690px;
+  margin: 0 auto;
+  /*para deixar as margens apenas nas laterais fixando no centro, e em cima 0 para ficar colado emcima e embaixo, mesmo efeito de deixar apenas auto*/
+  padding: 20px 32px;
+}
+
+header {
+  padding: 20px 0;
+}
+
+form {
+  border: var(--border);
+  border-inline: none;
+  /*tira as bordas laterais (verticais), deixando apenas encima e embaixo*/
+  padding: 20px 0;
+}
+
+fieldset {
+  border: none;
+  /*fieldset vem com uma border por default*/
+}
+
+fieldset>div {
+  display: flex;
+  /*deixar os inputs e botao lado a lado*/
+  gap: 12px;
+  /*após o flex, é possivel definir a distancia entre os elementos*/
+}
+
+.input-wrapper {
+  /*manipula o tamanho do elemento*/
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  border: var(--border);
+  border-radius: 10px;
+
+  padding: 8px 12px;
+
+  font: 400 14px/150% 'Roboto', sans-serif;
+  color: #C4C4CC;
+}
+
+input {
+  all: unset;
+  /*tira toda a formatação visual deste elemento, basicamente tira a caixa de input*/
+}
+
+fieldset legend,
+section h2 {
+  font: 700 16px/140% 'Roboto', sans-serif;
+  color: #E1E1E6;
+  padding-bottom: 16px;
+}
+
+fieldset button {
+  width: fit-content;
+  border: 0;
+  background: #F48F56;
+  border-radius: 10px;
+  padding: 7px 20px;
+
+  font: 700 12px/24px 'Roboto', sans-serif;
+  color: #00292E;
+}
+
+fieldset button:hover {
+  background: #f37c37;
+}
+
+.lista-participantes {
+  padding: 20px 0;
+}
+
+.lista-participantes>div {
+  border: var(--border);
+  border-radius: 8px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table thead {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+thead th,
+tbody td {
+  padding: 12px 16px;
+}
+
+tbody td {
+  border-top: var(--border);
+  font-size: 13px;
+  line-height: 15px;
+  color: #c4c4cc;
+}
+
+tbody td strong {
+  color: white;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+tbody td small {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+tbody td button {
+  all: unset;
+  color: #9FF9CC;
+}
+
+tbody td button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

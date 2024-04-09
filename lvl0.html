@@ -9,26 +9,20 @@
 </head>
 
 <body>
-    <section id="ipainel">
-        <div id="inumObjetos" class="layout">
-            <p>Número de objetos:</p>
-            <p class="num">0</p>
-        </div>
-        <div id="iaddObjetos" class="layout">
-            <label for="inum">Quantidade de objetos:</label>
-            <!-- <br> -->
-            <input type="number" id="inum" value="0" min="0">
-            <!-- <br> -->
-            <button id="iadd">ADICIONAR</button>
-        </div>
-        <div id="iremover" class="layout">
-            <button id="idelete">REMOVER TUDO</button>
-        </div>
-    </section>
-    <div id="istage">
+    <div id="imain">
+        <label for="inome">Nome:</label>
+        <input type="text" id="inome">
+        <label for="itel">Telefone:</label>
+        <input type="number" id="itel">
+        <label for="iemail">Email:</label>
+        <input type="text" id="iemail">
+        <input type="button" id="ibotao" value="GRAVAR">
+    </div>
+    <div id="ilista">
 
     </div>
-    <script src="script.js"></script>
+
+    <script src="script.js" type="module"></script>
 </body>
 
 
