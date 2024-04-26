@@ -6,20 +6,3 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
-body {
-    background-color: blue;
-    /* color: rgba(211, 211, 211, 0.619); */
-}
-
-#icontainer {
-    display: flex;
-    gap: 12px;
-    height: 30px;
-}
-
-button {
-    flex: 1;
-    border-radius: 5px;
-    height: 100%;
-}

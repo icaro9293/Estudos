@@ -10,7 +10,7 @@ class CaixaMSG {
         this.tipo = config.tipo
         this.destino = document.body
         this.div = document.createElement('div')
-        const estiloDiv = 'display: flex;' + 'justify-content: center;' + 'align-items: center;' + 'position: absolute;' + 'top: 0px;' + 'left: 0px;' + 'width: 100%;' + 'height: 100vh;' + 'background-color: rgba(0, 0, 0, 0.7);'
+        const estiloDiv = 'display: flex;' + 'justify-content: center;' + 'align-items: center;' + 'position: absolute;' + 'top: 0px;' + 'left: 0px;' + 'width: 100%;' + 'height: 100vh;' + 'background-color: rgba(0, 0, 0, 0.7);' + 'z-index: 99999'
         this.div.setAttribute('style', estiloDiv)
         this.destino.prepend(this.div)
 
@@ -66,5 +66,5 @@ class CaixaMSG {
 
 
 
-export default CaixaMSG
-//ou export {CaixaMSG}
+// export default CaixaMSG
+export { CaixaMSG }
