@@ -1,4 +1,4 @@
-import { Login } from "./modulo.js";
+// import { Login } from "./modulo.js";
 import { CaixaMSG } from '../Módulo-CaixaMensagem/módulo.js'
 
 const configCaixaErro = {
