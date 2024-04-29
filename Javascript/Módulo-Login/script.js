@@ -1,5 +1,5 @@
 import { Login } from "./módulo.js";
-import { CaixaMSG } from './Javascript/Classe-CaixaMensagem/módulo.js'
+import { CaixaMSG } from '../Módulo-CaixaMensagem/módulo.js'
 
 const configCaixaErro = {
     cor: 'red',
