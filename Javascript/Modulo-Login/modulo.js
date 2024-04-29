@@ -154,7 +154,7 @@ class Login {
 }
 
 
-export { Login }
+// export { Login }
 //modelos CDN
 //https://cdn.jsdelivr.net/gh/   ESSE É O PADRÃO RETIRADO DO JSDELIVR
 //https://cdn.jsdelivr.net/gh/conta_github/nome_repositório/arquivo ESSE É O MODELO
