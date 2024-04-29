@@ -158,5 +158,5 @@ export { Login }
 //modelos CDN
 //https://cdn.jsdelivr.net/gh/   ESSE É O PADRÃO RETIRADO DO JSDELIVR
 //https://cdn.jsdelivr.net/gh/conta_github/nome_repositório/arquivo ESSE É O MODELO
-//https://github.com/icaro9293/Estudos/blob/main/Javascript/M%C3%B3dulo-Login/modulo.js ESSE É O LINK DO AR1QUIVO NO GITHUB
-//https://cdn.jsdelivr.net/gh/icaro9293/Estudos/Javascript/M%C3%B3dulo-Login/modulo.js
+//https://github.com/icaro9293/Estudos/blob/main/Javascript/Modulo-Login/modulo.js  ESSE É O LINK DO AR1QUIVO NO GITHUB
+//https://cdn.jsdelivr.net/gh/icaro9293/Estudos/Javascript/Modulo-Login/modulo.js
