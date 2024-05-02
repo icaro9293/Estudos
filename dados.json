@@ -1,0 +1,32 @@
+[
+    {
+        "id": "01",
+        "produto": "processador",
+        "marca": "intel",
+        "modelo": "i7"
+    },
+    {
+        "id": "02",
+        "produto": "mouse",
+        "marca": "logitech",
+        "modelo": "M90"
+    },
+    {
+        "id": "03",
+        "produto": "monitor",
+        "marca": "samsung",
+        "modelo": "syncmaster"
+    },
+    {
+        "id": "04",
+        "produto": "impressora",
+        "marca": "HP",
+        "modelo": "P1005"
+    },
+    {
+        "id": "05",
+        "produto": "notebook",
+        "marca": "dell",
+        "modelo": "clone"
+    }
+]
