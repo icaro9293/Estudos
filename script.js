@@ -61,5 +61,14 @@ const DGV = (configDGV) => {
         })
 }
 
+const conectar = async () => {
+    const db = require('./databse.js')
+    const clientes = await db.selectClientes()
+    console.log(clientes)
+}
+
 DGV(configDGV)
+conectar()
+
+
 
