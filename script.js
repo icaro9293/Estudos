@@ -1,16 +1,18 @@
 
+
 const configDGV = {
-    endpoint: 'dados.json',
+    endpoint: './database.js',
     divDestino: 'dados'
 }
 
 const DGV = (configDGV) => {
     const dados = document.getElementById(configDGV.divDestino)
+
     fetch(configDGV.endpoint)
         .then((res) => {
+            console.log(res)
             return res.json()
-        }
-        )
+        })
         .then((res) => {
             console.log(res)
             res.map((el) => {
@@ -61,14 +63,10 @@ const DGV = (configDGV) => {
         })
 }
 
-const conectar = async () => {
-    const db = require('./databse.js')
-    const clientes = await db.selectClientes()
-    console.log(clientes)
-}
+
 
 DGV(configDGV)
-conectar()
+
 
 
 
