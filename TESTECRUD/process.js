@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
 
 // app.get('/', (req, res) => {
 //     res.send(`
-//     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+//     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" Dintegrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 // 		<div class="container">
 // 			<h1 class="text-center mt-3 mb-3">Submit Form Data in Node.js</h1>
 // 			<div class="card">
