@@ -1,7 +1,7 @@
 
 
 const configDGV = {
-    endpoint: './database.js',
+    endpoint: 'localhost/3000',
     divDestino: 'dados'
 }
 
