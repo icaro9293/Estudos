@@ -1,15 +1,18 @@
 import { useState } from "react";
+import BlogList from './BlogList'
+import useFetch from "./useFetch";
 
 const Home = () => {
-    const [blog, setBlog] = useState([
-        { title: 'novo blog 1', body: 'lorem ipsum...', autor: 'clone', id: 1 },
-        { title: 'novo blog 2', body: 'lorem ipsum...', autor: 'lion', id: 2 },
-        { title: 'novo blog 3', body: 'lorem ipsum...', autor: 'nininha', id: 3 }
-    ])
+
+    const { data: blog, isPending, erro } = useFetch('http://localhost:8000/blog')
+    // const handleDelete = (id) => {
+    //     const newBlog = blog.filter((b) => {
+    //         return b.id !== id
+    //     })
+    //     setBlog(newBlog)
+    // }
 
     const [nome, setNome] = useState('clone')
-
-
 
     const mudarNome = () => {
         setNome('lion')
@@ -17,16 +20,14 @@ const Home = () => {
 
     return (
         <div className="home">
-            <h1>teste REACT lvl0 </h1>
             <p>{nome}</p>
             <button onClick={mudarNome}>Clique</button>
-            {blog.map((blog) => (
-                <div className="blog-preview" key={blog.id}>
-                    <h2>{blog.title}</h2>
-                    <p>{blog.autor}</p>
-                </div>
-            ))}
-
+            {/* condicional em React: apenas se a condição na esquerda for true, a da direita será executada. */}
+            {erro && <div>{erro}</div>}
+            {isPending && <div>Carregando...</div>}
+            {/* enquanto a variavel 'blog' estiver como null, ele não entra no resto das funções.*/}
+            {blog && <BlogList blog={blog} title='Blogs cadastrados' ></BlogList>}
+            {/* <BlogList blog={blog.filter((b) => b.autor === 'clone')} title='Blogs escrito por clone'></BlogList> */}
         </div>
     );
 }

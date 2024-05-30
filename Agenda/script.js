@@ -3,6 +3,7 @@ const menu = document.getElementById('menu')
 const btn_home = document.getElementById('btn_home')
 const btn_novo = document.getElementById('btn_novo')
 const btn_pesquisar = document.getElementById('btn_pesquisar')
+const btn_filtrar = document.getElementById('btn_filtrar')
 const btn_gestao = document.getElementById('btn_gestao')
 const btn_sobre = document.getElementById('btn_sobre')
 const principal = document.getElementById('principal')
@@ -36,6 +37,10 @@ const abrirAba = (el, url) => {
     const botoes = [...document.querySelectorAll('.btn')]
     botoes.map((e) => {
         e.classList.remove('btn-secondary')
+        if (!e.classList.contains('btn-primary')) {
+            e.classList.add('btn-primary')
+        }
+
     })
     el.classList.add('btn-secondary')
     window.open(url, 'if_principal')
