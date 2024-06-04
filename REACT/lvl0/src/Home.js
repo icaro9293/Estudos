@@ -21,7 +21,7 @@ const Home = () => {
     return (
         <div className="home">
             <p>{nome}</p>
-            <button onClick={mudarNome}>Clique</button>
+            <button onClick={mudarNome}>Clique para trocar o nome acima</button>
             {/* condicional em React: apenas se a condição na esquerda for true, a da direita será executada. */}
             {erro && <div>{erro}</div>}
             {isPending && <div>Carregando...</div>}

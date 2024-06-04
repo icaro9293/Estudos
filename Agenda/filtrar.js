@@ -1,35 +1,16 @@
 const resultado = document.getElementById('iresultado')
 const dados = document.getElementById('idados')
 const janelaEditar = document.getElementById('fundoJanela')
-const btn_gravar = document.getElementById('ibtn_gravar')
-const btn_cancelar = document.getElementById('ibtn_cancelar')
+const btn_filtrar = document.getElementById('btn_filtrar')
 const id = document.getElementById('id')
 const e_nome = document.getElementById('inome')
 const e_tel = document.getElementById('itel')
 const e_email = document.getElementById('iemail')
-
-btn_gravar.addEventListener('click', (evt) => {
-    janelaEditar.classList.add('ocultar')
-    const endpoint = `http://127.0.0.1:1880/editcontato/${id.value}/${e_nome.value}/${e_tel.value}/${e_email.value}`
-    fetch(endpoint)
-        .then((res) => {
-            if (res.status == 200) {
-                alert('atualizado com sucesso')
-                mostrarDGV()
-            } else {
-                alert('erro ao atualizar dados.')
-            }
-        })
-})
-
-btn_cancelar.addEventListener('click', (evt) => {
-    janelaEditar.classList.add('ocultar')
-})
+const nomeFiltro = document.getElementById('inomeFiltro')
 
 
-
-const mostrarDGV = () => {
-    let endpoint = `http://127.0.0.1:1880/pesquisarallcontato`
+const mostrarDGV = (endpoint) => {
+    // let endpoint = `http://127.0.0.1:1880/pesquisarallcontato`
     fetch(endpoint)
         .then(res => res.json())
         .then((res) => {
@@ -90,7 +71,7 @@ const mostrarDGV = () => {
         })
 }
 
-mostrarDGV()
+mostrarDGV('http://127.0.0.1:1880/pesquisarallcontato')
 
 const deletarContato = (id) => {
     const endpoint = `http://127.0.0.1:1880/deletecontato/${id}`
@@ -98,9 +79,17 @@ const deletarContato = (id) => {
         .then((res) => {
             if (res.status == 200) {
                 console.log('contato deletado com sucesso.')
-                mostrarDGV()
+                mostrarDGV('http://127.0.0.1:1880/pesquisarallcontato')
             } else {
                 console.log('erro ao deletar contato.')
             }
         })
 }
+
+btn_filtrar.addEventListener('click', (evt) => {
+    if (nomeFiltro.value == '') {
+        mostrarDGV('http://127.0.0.1:1880/pesquisarallcontato')
+    } else {
+        mostrarDGV(`http://127.0.0.1:1880/filtrar/${nomeFiltro.value}`)
+    }
+})

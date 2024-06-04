@@ -23,6 +23,11 @@ btn_pesquisar.addEventListener('click', (evt) => {
     // window.open('./pesquisar.html', 'if_principal')
 })
 
+btn_filtrar.addEventListener('click', (evt) => {
+    abrirAba(evt.target, './filtrar.html')
+    // window.open('./filtrar.html', 'if_principal')
+})
+
 btn_gestao.addEventListener('click', (evt) => {
     abrirAba(evt.target, './gestao.html')
     // window.open('./gestao.html', 'if_principal')
