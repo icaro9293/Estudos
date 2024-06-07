@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+* {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+.mainMenu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 146px;
+    height: 100vh;
+    gap: 10px;
+    position: absolute;
+    left: -147px;
+    top: 0px;
+    transition: 0.5s;
+    background-color: lightgray;
+    padding: 5px;
+}
+
+.ifprincipal {
+    width: 100%;
+    height: 100vh;
+}
+
+.expandir {
+    left: 0px !important;
+    transition: 0.5s;
+}
+
+.icons {
+    cursor: pointer;
+    width: 30px;
+    border-radius: 7px;
+}
+
+.icons:hover {
+    background-color: grey;
+}
+
+.itensMenu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    /* background-color: grey; */
+    width: 100%;
+    height: 100%;
+    margin: 4px;
+}
+
+.itensMenu a {
+    text-decoration: none;
+    color: white;
+}
+
+/*TABELAS GERAL*/
+
+.tabela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+
+.titulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.colunaTitulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border: 1px solid black;
+}
+
+.dados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.linhadados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.colunaDados {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: lightgray;
+    font-weight: 600;
+}
+
+.colunaDados:hover {
+    background-color: azure;
+}
+
+/*******/

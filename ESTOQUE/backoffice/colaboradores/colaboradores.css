@@ -1,0 +1,19 @@
+body {
+    overflow-y: auto !important;
+}
+
+.topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .colunaDados .c1 {}
+
+.colunaDados .c2 {}
+
+.colunaDados .c3 {}
+
+.colunaDados .c4 {}
+
+.colunaDados .c5 {} */
