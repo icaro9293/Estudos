@@ -15,8 +15,66 @@
 
     <!-- <a href="../index.html" target="ifprincipal">HOME</a> -->
     <div class="topo">
-        <h1>COLABORADORES</h1>
+        <div></div>
+        <div>
+            <h1>COLABORADORES</h1>
+        </div>
+        <div>
+            <img src="../../imgs/add.svg" alt="adicionar" title="adicionar novo operador" class="icons" id="btn_create">
+        </div>
     </div>
+
+    <div id="janelaPopup" class="janelaBackground ocultar">
+        <div class="janela">
+            <div class="topoJanela">
+                Novo cadastro
+            </div>
+            <div class="corpoJanela">
+                <div class="camposForm">
+                    <label for="inome">Nome</label>
+                    <input type="text" id="inome" name="nome">
+                </div>
+                <div class="camposForm">
+                    <label for="itipo">Tipo</label>
+                    <select name="tipo" id="itipo">
+                        <!-- <option value="super usuario">super usuario</option>
+                        <option value="administrador">administrador</option>
+                        <option value="colaborador">colaborador</option> -->
+                    </select>
+                </div>
+                <div class="camposForm">
+                    <label for="istatus">Status</label>
+                    <select name="status" id="istatus">
+                        <option value="A">ativo</option>
+                        <option value="I">inativo</option>
+                    </select>
+                </div>
+                <div class="camposForm">
+                    <label for="ifoto">Foto</label>
+                    <input type="file" name="foto" id="ifoto" accept="image/png, image/jpeg, image/jpg">
+                </div>
+                <div class="camposForm">
+                    <img src="#" id="imagem" class="imagem">
+                </div>
+                <div class="camposForm">
+                    <label for="itel">Telefone</label>
+                    <div class="campoTel">
+                        <input type="number" id="itel" name="telefone">
+                        <button id="addTel" class="btn btn-primary">Add</button>
+                    </div>
+                    <div id="telefones">
+                        <!-- <div class="tel">(65) 96543-65465</div>
+                        <img src="../../imgs/lixeira.svg" alt="" class="delTel"> -->
+                    </div>
+                </div>
+            </div>
+            <div class="rodapeJanela">
+                <button class="btn btn-primary" id="btn_add">Adicionar</button>
+                <button class="btn btn-primary" id="btn_cancelar">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
     <div class="tabela">
         <div class="titulos">
             <div class="colunaTitulos c1">ID</div>

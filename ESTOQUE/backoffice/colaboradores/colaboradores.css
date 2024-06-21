@@ -4,8 +4,14 @@ body {
 
 .topo {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+
+.imagem {
+    width: 75px;
+    height: 100px;
+
 }
 
 /* .colunaDados .c1 {}
