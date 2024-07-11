@@ -14,12 +14,10 @@ body {
 
 }
 
-/* .colunaDados .c1 {}
-
-.colunaDados .c2 {}
-
-.colunaDados .c3 {}
-
-.colunaDados .c4 {}
-
-.colunaDados .c5 {} */
+.c5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around !important;
+    align-items: center;
+    /* width: 100%; */
+}

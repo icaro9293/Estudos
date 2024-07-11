@@ -120,6 +120,10 @@ body {
     background-color: azure;
 }
 
+.imgFunções {
+    cursor: pointer;
+}
+
 /*******/
 
 /*JANELA POPUP*/
