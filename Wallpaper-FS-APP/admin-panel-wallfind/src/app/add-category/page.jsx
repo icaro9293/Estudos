@@ -1,11 +1,11 @@
 "use client"
-import UploadImage from '@/components/uploadImage'
+import UploadImage from '@/components/UploadImage'
 import { api } from '@/utils/api'
 import React, { useState } from 'react'
 import toast from 'react-hot-toast'
 
 
-export default function page() {
+export default function Page() {
     const [category, setCategory] = useState({
         name: "",
         image: ""
